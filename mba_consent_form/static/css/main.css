@@ -1,5 +1,6 @@
+/* Start of Base CSS */
 :root {
-    --background: rgba(85, 214, 170, .85);
+    --background: rgba(66, 86, 94, 0.384);
 }
 
 *, *::before, *::after {
@@ -8,7 +9,7 @@
 
 body {
     margin: 0;
-    background: #222;
+    background: aliceblue;
     font-family: 'Work Sans', sans-serif; 
     font-weight: 400;
     /* Be sure to change the font-family */
@@ -17,14 +18,71 @@ body {
 .content {
     height: 200vh;
     /* background-image: url(https://unsplash.com/photos/78A265wPiO4); */
-    background-color: #333;
+    background-color: aliceblue;
     background-blend-mode: multiply;
     background-size: cover;
     display: grid;
     place-items: center;
 }
 
-/* Nav Styles */
+/* End of Base CSS */
+
+/* Start of index.html */
+
+
+/* .indexdiv {
+    position: relative;
+    top: 400px;
+    left: 300px;
+} */
+
+/* .indexdiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+} */
+/* 
+.list-group-item {
+    width: 50%;
+} */
+
+/* End of index.html */
+
+/* Start of signin.html */
+
+.signinh1 {
+    position: relative;
+    top: 400px;
+    left: 500px;
+}
+
+/* End of signin.html */
+
+/* Start of signup.html */
+
+.signuph1 {
+    padding: 10%;
+}
+
+/* End of signup.html */
+
+/* Start of consent.html */
+
+.consenth1 {
+    padding: 25%;
+}
+
+/* End of consent.html */
+
+/* Start of search.html */
+
+.searchh1 {
+    padding: 25%;
+}
+
+/* End of search.html */
+
+/* Start of Nav Styles */
 
 header {
     background: var(--background);
@@ -107,7 +165,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #000;
+    color: grey;
 }
 
 .nav-toggle:checked ~ nav {
@@ -122,8 +180,8 @@ nav a:hover {
 
 .logo{
     padding: 1rem;
-    height: 120px;
-    width: 260px;
+    height: 130px;
+    width: 300px;
 }
 
 @media screen and (min-width: 800px){
@@ -162,7 +220,7 @@ nav a:hover {
         content: '';
         display: block;
         height: 5px;
-        background: black;
+        background: aliceblue;
         position: absolute;
         bottom: -.75em;
         left: 0;
@@ -176,4 +234,4 @@ nav a:hover {
     }
 }
 
-/* End Nav Styles */
+/* End of Nav Styles */

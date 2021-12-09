@@ -67,10 +67,12 @@
   <input type="checkbox" id="nav-toggle" class="nav-toggle">
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Consent</a></li>
-      <li><a href="#">Sign In</a></li>
-      <li><a href="#">Search</a></li>
+      <li><a href="{{ url_for('site.home') }}">Home</a></li>
+      <li><a href="{{ url_for('site.home') }}">Customer</a></li>
+      <li><a href="{{ url_for('consent.consent') }}">Consent</a></li>
+      <li><a href="{{ url_for('searcher.search') }}">Search</a></li>
+      <li><a href="{{ url_for('auth.signin') }}">Sign In</a></li>
+      <li><a href="{{ url_for('auth.signup') }}">Sign Up</a></li>
     </ul>
   </nav>
   <label for="nav-toggle" class="nav-toggle-label">
