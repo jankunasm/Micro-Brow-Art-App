@@ -60,8 +60,12 @@ body {
 
 /* Start of signup.html */
 
-.signuph1 {
-    padding: 10%;
+.container {
+    padding: 15%;
+}
+
+.btn {
+    margin-top: 3%;
 }
 
 /* End of signup.html */

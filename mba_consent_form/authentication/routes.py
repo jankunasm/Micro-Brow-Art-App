@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 from mba_consent_form.forms import UserLoginForm
+from mba_consent_form.models import db, User
 
 auth = Blueprint('auth',__name__, template_folder='auth_templates')
 
@@ -13,7 +14,9 @@ def signup():
             password = form.password.data
             print(email, password)
 
-            # TODO: add user to database
+            user = User(email, password = password)
+            db.session.add(user)
+            db.session.commit()
 
             flash(f'You have successfully created a user account for {email}.', 'user-created')
 
