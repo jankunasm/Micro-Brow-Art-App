@@ -9,7 +9,11 @@ from .search.routes import searcher
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate, migrate
 
-from .models import db as root_db
+from .models import db as root_db, login_manager, ma
+from flask_cors import CORS
+
+from mba_consent_form.helpers import JSONEncoder
+
 
 
 
@@ -25,4 +29,12 @@ app.config.from_object(Config)
 
 root_db.init_app(app)
 
+login_manager.init_app(app)
+login_manager.login_view = 'auth.signin'
+ma.init_app(app)
+
 migrate = Migrate(app, root_db)
+
+CORS(app)
+
+app.json_encoder = JSONEncoder
