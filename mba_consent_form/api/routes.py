@@ -11,7 +11,7 @@ def getdata(current_user_token):
             'other': 'Data'}
 
 # Customer Creation Route
-@api.route('/customers', methods = ['POST']) # VERY POSSIBLE THAT THIS HAS TO BE METHOD instead of METHODS
+@api.route('/customers', methods = ['POST'])
 @token_required
 def create_customer(current_user_token):
     first_name = request.json['first_name']

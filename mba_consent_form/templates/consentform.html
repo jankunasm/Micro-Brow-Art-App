@@ -1,0 +1,28 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="first_name-field">
+            {{ form.first_name.label }}
+            {{ form.first_name(class = "form-control", placeholder = "First Name") }}
+        </fieldset>
+        <fieldset id="last_name-field">
+            {{ form.last_name.label }}
+            {{ form.last_name(class = "form-control", placeholder = "Last Name") }}
+        </fieldset>
+        <fieldset id="address-field">
+            {{ form.address.label }}
+            {{ form.address(class = "form-control", placeholder = "Address") }}
+        </fieldset>
+        <fieldset id="phone-number-field">
+            {{ form.phone_number.label }}
+            {{ form.phone_number(class = "form-control", placeholder = "Phone Number") }}
+        </fieldset>
+        <fieldset id="consent-field">
+            {{ form.consent.label }}
+            {{ form.consent(class = "form-control", placeholder = "Consent") }}
+        </fieldset>
+
+        {{ form.submit(id = 'consbutt', class = 'btn btn-secondary btn-block') }}
+    </div>
+
+</form>

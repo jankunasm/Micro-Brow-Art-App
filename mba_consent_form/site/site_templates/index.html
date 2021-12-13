@@ -16,22 +16,18 @@
         {% endif %}
     {% endwith %}
 </div>
-
-<header class = "container">
-    <h3> Welcome to Micro Brow Art! {{ current_user.email }} </h3>
-</header>
-
-
-<!-- <div class = "indexdiv">
-<h1 class = "indexh1">Welcome to Micro Brow Art</h1>
-<h2 class = "indexh2">Here are your Profile Details</h2>
-
-<div>
-    <ul class = "list-group">
-        <li class = "list-group-item">Email: </li>
-        <li class = "list-group-item">Token: </li>
-    </ul>
+<br>
+<br>
+<div class = "container1">
+    <h3> Welcome to Micro Brow Art Customer Relation Manager! {{ current_user.email }} </h3>
 </div>
-</div> -->
+
+<div class = "container2">
+    <h5> This app is desgined to handle relationships with clients using the concepts of
+        customer relationship management. The primary goal is to act as data entry for clients
+        and the ability to retrieve that information easily. In the future the plan is to integrate
+        this application with an Embedded Docusign API to handle clients signing Consent forms.
+    </h5>
+</div>
 
 {% endblock content %}

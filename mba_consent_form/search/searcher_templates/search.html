@@ -2,6 +2,24 @@
 
 {% block content %}
 
-<h1 class = "searchh1"> Search Form Here! </h1>
+<div class = "searchform">
+<main class="container">
+    <div class="row">
+        <aside class="col-12 col-md-6">
+            <h2 class = "sci">Search Customer Information</h2>
+            {% include 'searchform.html' %}
+        </aside>
+    </div>
+</main>
+</div>
+
+<div>
+    {% for row in data %}
+    <p>{{ row[1] }}</p>
+    {% endfor %}
+</div>
 
 {% endblock content %}
+
+
+<!-- Make sure conditional for no user result -->

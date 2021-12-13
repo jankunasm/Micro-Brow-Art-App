@@ -30,21 +30,6 @@ body {
 /* Start of index.html */
 
 
-/* .indexdiv {
-    position: relative;
-    top: 400px;
-    left: 300px;
-} */
-
-/* .indexdiv {
-    display: flex;
-    justify-content: center;
-    padding-top: 20%;
-} */
-/* 
-.list-group-item {
-    width: 50%;
-} */
 
 /* End of index.html */
 
@@ -54,6 +39,30 @@ body {
     position: relative;
     top: 400px;
     left: 500px;
+}
+
+.container1 {
+    text-align: center;
+    position: relative;
+    bottom: 310px;
+}
+
+.container2 {
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    width: 50%;
+    left: 400px;
+}
+
+.si {
+    text-align: center;
+}
+
+.siform {
+    position: relative;
+    left: 12%;
+    top: 10%;
 }
 
 /* End of signin.html */
@@ -68,20 +77,84 @@ body {
     margin-top: 3%;
 }
 
+.su {
+    text-align: center;
+}
+
+#authbutt {
+    margin-left: 32%;
+}
+
+.suform {
+    position: relative;
+    left: 12%;
+    top: 10%;
+}
 /* End of signup.html */
 
 /* Start of consent.html */
 
 .consenth1 {
-    padding: 25%;
+    position: relative;
+    top: 170px;
+    text-align: center;
 }
 
+.consenth2 {
+    position: relative;
+    top: 250px;
+    text-align: center;
+    width: 65%;
+    left: 18%;
+}
+
+.consform {
+    position: relative;
+    top: 100px;
+    left: 210px;
+}
+
+.cfh1 {
+    text-align: center;
+}
+
+#consbutt {
+    margin-left: 38%;
+}
 /* End of consent.html */
+
+/* Start of customer.html */
+
+#custbutt {
+    margin-left: 38%;
+}
+
+.custform {
+    position: relative;
+    right: 20%;
+}
+
+.lorem {
+    position: relative;
+    float: right;
+}
+
+/* End of customer.html */
 
 /* Start of search.html */
 
-.searchh1 {
-    padding: 25%;
+.searchform {
+    position: relative;
+    right: 20%;
+    top: 40px;
+}
+
+#searchbutt {
+    margin-left: 39%;
+}
+
+.sci {
+    text-align: center;
 }
 
 /* End of search.html */

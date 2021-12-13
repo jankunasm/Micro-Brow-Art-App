@@ -1,5 +1,3 @@
-<!-- HTML produced by the Flask Forms -->
-
 <form method="POST">
     {{ form.hidden_tag() }}
     <div class="form-group">
@@ -12,7 +10,7 @@
             {{ form.password(class = "form-control", placeholder = "Password") }}
         </fieldset>
 
-        {{ form.submit_button(class = 'btn btn-secondary btn-block') }}
+        {{ form.submit_button(id = 'authbutt', class = 'btn btn-secondary btn-block') }}
     </div>
 
 </form>

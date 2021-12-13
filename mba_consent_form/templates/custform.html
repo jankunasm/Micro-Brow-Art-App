@@ -1,0 +1,32 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="first_name-field">
+            {{ form.first_name.label }}
+            {{ form.first_name(class = "form-control", placeholder = "First Name") }}
+        </fieldset>
+        <fieldset id="last_name-field">
+            {{ form.last_name.label }}
+            {{ form.last_name(class = "form-control", placeholder = "Last Name") }}
+        </fieldset>
+        <fieldset id="needle-field">
+            {{ form.needle.label }}
+            {{ form.needle(class = "form-control", placeholder = "Needle") }}
+        </fieldset>
+        <fieldset id="machine-field">
+            {{ form.machine.label }}
+            {{ form.machine(class = "form-control", placeholder = "Machine") }}
+        </fieldset>
+        <fieldset id="pigment-field">
+            {{ form.pigment.label }}
+            {{ form.pigment(class = "form-control", placeholder = "Pigment") }}
+        </fieldset>
+        <fieldset id="brow_type-field">
+            {{ form.brow_type.label }}
+            {{ form.brow_type(class = "form-control", placeholder = "Brow Type") }}
+        </fieldset>
+
+        {{ form.create(id = 'custbutt', class = 'btn btn-secondary btn-block') }}
+    </div>
+
+</form>

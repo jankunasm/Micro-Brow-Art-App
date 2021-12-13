@@ -1,54 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="../static/css/main.css">
-<title>Micro Brow Art</title>
-</head>
-<body> -->
-
-    <!-- NavBar starts here -->
-    
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <img src="../static/images/MircroBrowArtLogoBlack.png" alt="Micro Brow Art Logo" width="260" height="75"
-          class="d-inline-block align-text-top">
-        <a class="navbar-brand" href="{{ url_for('site.home') }}">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- End of NavBar -->
-
-<!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,9 +17,9 @@
   <nav>
     <ul>
       <li><a href="{{ url_for('site.home') }}">Home</a></li>
-      <li><a href="{{ url_for('site.home') }}">Customer</a></li>
-      <li><a href="{{ url_for('consent.consent') }}">Consent</a></li>
+      <li><a href="{{ url_for('cust.create_customer') }}">Customer</a></li>
       <li><a href="{{ url_for('searcher.search') }}">Search</a></li>
+      <li><a href="{{ url_for('cons.consent') }}">Consent</a></li>
       {% if current_user.is_authenticated %}
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
       {% else %}
