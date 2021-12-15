@@ -18,28 +18,16 @@ def search():
             fn = form.first_name.data
             ln = form.last_name.data
             
-            # cursor.execute(f'select * from public.customer where first_name = "{fn}" and last_name = "{ln}"')
-            # result = cursor.fetchone().first()
-            
-            search = f"select * from public.customer where first_name = '{fn}' and last_name = '{ln}'"
             cursor.execute(f"select * from public.customer where first_name = '{fn}' and last_name = '{ln}'")
 
-            result = cursor.fetchone() # maybe .first()
+            result = cursor.fetchone()
             print(result)
 
         else:
             fn = form.first_name.data
             ln = form.last_name.data
             result = ''
-
-            # psql_query = "select * from customer"
-            # cursor.execute(psql_query)
-
-            # customer_records = cursor.fetchone()
-            # print("Print first record", customer_records)
-
-            # customer_records2 = cursor.fetchone()
-            # print("Printing second record", customer_records2)
+            flash('Nobody by that name(case-sensitive) category="message"')
 
     except:
         raise Exception('Invalid Form Data: Please check your form.')

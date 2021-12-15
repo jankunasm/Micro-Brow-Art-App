@@ -23,11 +23,20 @@
 </div>
 
 <div class = "container2">
-    <h5> This app is desgined to handle relationships with clients using the concepts of
+    <h5> This app is designed to handle relationships with clients using the concepts of
         customer relationship management. The primary goal is to act as data entry for clients
-        and the ability to retrieve that information easily. In the future the plan is to integrate
-        this application with an Embedded Docusign API to handle clients signing Consent forms.
+        and the ability to retrieve that information easily. The consent form page is a mockup, 
+        in the future the plan is to integrate this application with an Embedded Docusign API 
+        to handle clients signing consent forms.
     </h5>
 </div>
+
+    <div class = 'diq'>
+        <h4>Here is your Daily Inspirational Quote</h4>
+        <br>
+        {% for datas in data %}
+        <span><i>"{{ datas["q"] }}"</i></span>
+        {% endfor %}
+    </div>
 
 {% endblock content %}

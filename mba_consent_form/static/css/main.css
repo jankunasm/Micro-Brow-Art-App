@@ -29,7 +29,16 @@ body {
 
 /* Start of index.html */
 
-
+.diq {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8%;
+    border: 5px solid rgba(66, 86, 94, 0.384);
+    width: 50%;
+    padding: 3%;
+    border-style: groove;
+}
 
 /* End of index.html */
 
@@ -51,8 +60,9 @@ body {
     text-align: center;
     position: relative;
     bottom: 200px;
-    width: 50%;
-    left: 400px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .si {
@@ -132,15 +142,15 @@ body {
 
 .custform {
     position: relative;
-    right: 20%;
-    bottom: 100px;
+    right: 12%;
+    bottom: 120px;
 }
 
 .lorem {
     position: relative;
-    left: 70%;
+    left: 60%;
     width: 40%;
-    top: 450px;
+    top: 380px;
 }
 
 .custh1{
@@ -157,8 +167,44 @@ body {
 
 .searchform {
     position: relative;
-    right: 20%;
-    top: 40px;
+    right: 12%;
+    bottom: 277px;
+}
+
+#searchtable {
+    position: relative;
+    width: 30%;
+    left: 50%;
+    top: 300px;
+    border: 1px solid lightgray;
+}
+
+.results {
+    position: relative;
+    left: 62.5%;
+    top: 290px;
+}
+
+#searchtable td {
+    text-align: center;
+    width: 100%;
+}
+
+#searchtable tr:hover {
+    background-color: var(--background);
+}
+
+#searchtable tr:nth-child(odd) {
+    background-color: var(--background);
+}
+
+#searchtable th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: var(--background);
+    color: black;
+
 }
 
 #searchbutt {
