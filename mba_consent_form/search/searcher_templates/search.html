@@ -13,13 +13,62 @@
 </main>
 </div>
 
-<div>
-    {% for row in data %}
-    <p>{{ row[1] }}</p>
-    {% endfor %}
-</div>
+<!-- <table class = "setable"> 
+    <head> 
+    <tr> 
+        <th>{{ result }}<th> 
+        <th>Last Name</th> 
+        <th>Needle</th> 
+        <th>Machine</th> 
+        <th>Pigment</th> 
+        <th>Brow Type</th> 
+    </tr> 
+    </head> 
+    <tbody> 
+        {% for row in result %}  
+            <tr> 
+                <td>{{row[0]}}</td> 
+                <td>{{row[1]}}</td> 
+                <td>{{row[2]}}</td> 
+                <td>{{row[3]}}</td> 
+                <td>{{row[4]}}</td> 
+                <td>{{row[5]}}</td> 
+            </tr> 
+        {% endfor %} 
+    </tbody> 
+</table> -->
+
+<table>
+    <tr>
+      <th>First Name</th>
+      <td>{{ result[1] }}</td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td>{{ result[2] }}</td>
+    </tr>
+    <tr>
+      <th>Needle</th>
+      <td>{{ result[3] }}</td>
+    </tr>
+    <tr>
+      <th>Machine</th>
+      <td>{{ result[4] }}</td>
+    </tr>
+    <tr>
+      <th>Pigment</th>
+      <td>{{ result[5] }}</td>
+    </tr>
+    <tr>
+      <th>Brow Type</th>
+      <td>{{ result[6] }}</td>
+    </tr>
+  </table>
+
+
 
 {% endblock content %}
+
 
 
 <!-- Make sure conditional for no user result -->

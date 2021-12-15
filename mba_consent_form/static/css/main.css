@@ -106,6 +106,7 @@ body {
     text-align: center;
     width: 65%;
     left: 18%;
+    text-align: center;
 }
 
 .consform {
@@ -132,11 +133,22 @@ body {
 .custform {
     position: relative;
     right: 20%;
+    bottom: 100px;
 }
 
 .lorem {
     position: relative;
-    float: right;
+    left: 70%;
+    width: 40%;
+    top: 450px;
+}
+
+.custh1{
+    text-align: center;
+}
+
+.custh2 {
+    text-align: center;
 }
 
 /* End of customer.html */
@@ -156,6 +168,11 @@ body {
 .sci {
     text-align: center;
 }
+
+/* .setable {
+    position: relative;
+    margin-left: 15%;
+} */
 
 /* End of search.html */
 
