@@ -1,0 +1,1 @@
+web: gunicorn mba_consent_form:app --preload

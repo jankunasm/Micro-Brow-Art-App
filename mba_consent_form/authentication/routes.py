@@ -22,6 +22,8 @@ def signup():
 
             flash(f'You have successfully created a user account for {email}.', 'user-created')
 
+            #signin()  If i want users to signin at the same time as signup.
+
             return redirect(url_for('site.home'))
     except:
         raise Exception('Invalid Form Data: Please check your form.')
