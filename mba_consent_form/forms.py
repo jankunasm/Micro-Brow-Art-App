@@ -1,9 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
-from wtforms import validators
-from wtforms.fields.simple import BooleanField
 from wtforms.validators import DataRequired, Email
-from wtforms.widgets.core import NumberInput
+
 
 class UserLoginForm(FlaskForm):
     email = StringField('Enter Email Address', validators= [DataRequired(), Email()])

@@ -17,7 +17,6 @@ body {
 
 .content {
     height: 200vh;
-    /* background-image: url(https://unsplash.com/photos/78A265wPiO4); */
     background-color: aliceblue;
     background-blend-mode: multiply;
     background-size: cover;
@@ -28,6 +27,21 @@ body {
 /* End of Base CSS */
 
 /* Start of index.html */
+
+.container1 {
+    text-align: center;
+    position: relative;
+    bottom: 310px;
+}
+
+.container2 {
+    text-align: center;
+    position: relative;
+    bottom: 200px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .diq {
     text-align: center;
@@ -48,21 +62,6 @@ body {
     position: relative;
     top: 400px;
     left: 500px;
-}
-
-.container1 {
-    text-align: center;
-    position: relative;
-    bottom: 310px;
-}
-
-.container2 {
-    text-align: center;
-    position: relative;
-    bottom: 200px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .si {
@@ -214,11 +213,6 @@ body {
 .sci {
     text-align: center;
 }
-
-/* .setable {
-    position: relative;
-    margin-left: 15%;
-} */
 
 /* End of search.html */
 

@@ -27,7 +27,7 @@ def search():
             fn = form.first_name.data
             ln = form.last_name.data
             result = ''
-            flash('Nobody by that name(case-sensitive) category="message"')
+            flash('Nobody by that name(case-sensitive)', category="message")
 
     except:
         raise Exception('Invalid Form Data: Please check your form.')
